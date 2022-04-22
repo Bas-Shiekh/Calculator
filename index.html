@@ -8,6 +8,38 @@
   <title>Calculator</title>
 </head>
 <body>
-
+  <main>
+    <section>
+      <div class="result">0</div>
+      <span class="btn" id="delete">C</span>
+      <span class="btn">/</span>
+      <span class="btn">*</span>
+      <span class="btn">7</span>
+      <span class="btn">8</span>
+      <span class="btn">9</span>
+      <span class="btn">-</span>
+      <span class="btn">4</span>
+      <span class="btn">5</span>
+      <span class="btn">6</span>
+      <span class="btn" id="plus">+</span>
+      <span class="btn">1</span>
+      <span class="btn">2</span>
+      <span class="btn">3</span>
+      <span class="btn">0</span>
+      <span class="btn">00</span>
+      <span class="btn">.</span>
+      <span class="btn">=</span>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector("section"), {
+      max: 15,
+      speed: 400
+    });
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll("section"));
+  </script>
 </body>
 </html>
